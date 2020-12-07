@@ -1,0 +1,115 @@
+
+<!-- Chapter Summary
+Use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+ 
+
+Tag	Description
+<a>	Defines a hyperlink
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--  
+                HTML Links - Hyperlinks
+        HTML links are hyperlinks.
+
+        You can click on a link and jump to another document.
+
+        When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+        Note: A link does not have to be text. A link can be an image or any other HTML element!
+    -->
+
+    <!--  
+        HTML Links - Syntax
+        The HTML <a> tag defines a hyperlink. It has the following syntax:
+
+        <a href="url">link text</a>
+        The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+        The link text is the part that will be visible to the reader.
+
+        Clicking on the link text, will send the reader to the specified URL address.
+    -->
+    <!--  important
+        By default, links will appear as follows in all browsers:
+
+        An unvisited link is underlined and blue
+        A visited link is underlined and purple
+        An active link is underlined and red
+    -->
+
+    <a href="https://www.w3schools.com/html/html_links.asp">w3schools</a>
+    <hr>
+    <!-- HTML Links - The target Attribute
+        By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+
+        The target attribute specifies where to open the linked document.
+
+        The target attribute can have one of the following values:
+
+        _self - Default. Opens the document in the same window/tab as it was clicked
+        _blank - Opens the document in a new window or tab
+        _parent - Opens the document in the parent frame
+        _top - Opens the document in the full body of the window
+    -->
+    <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">visit w3schools</a>
+    <hr>
+    
+    <!-- Absolute URLs vs. Relative URLs
+        Both examples above are using an absolute URL (a full web address) in the href attribute.
+
+        A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):
+    -->
+    <a href="papa.jpg" target="_blank">image of girl</a>
+    <br>
+    <a href="textformatting.html" target="_blank">textformatting.html</a>
+    <br>
+    <!--  
+        HTML Links - Use an Image as a Link
+        To use an image as a link, just put the <img> tag inside the <a> tag:
+    -->
+    <a href="textformatting.html" target="_blank">
+        <img src="papa.jpg" alt="cute girl" height="50%" width="50%">
+    </a>
+    <br>
+
+    <!-- Link to an Email Address
+        Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):
+    -->
+    <a href="mailto:gopisai@gmail.com">mail me</a>
+    <br>
+    <!-- Button as a Link
+        To use an HTML button as a link, you have to add some JavaScript code.
+
+        JavaScript allows you to specify what happens at certain events, such as a click of a button:
+    -->
+    <button onclick="document.location='textformatting.html'">
+            textformatting.html
+    </button>
+    <hr>
+    <!--  
+        Link Titles
+        The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.
+    -->
+    <a href="https://www.w3schools.com/html/html_links.asp"
+        title="link for html_links"
+        target="_blank"
+    >
+    w3schools
+    </a>
+
+
+
+
+</body>
+</html>

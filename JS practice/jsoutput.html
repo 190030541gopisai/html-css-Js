@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javaScrip output possibilities</title>
+</head>
+<body>
+
+<p id="para">changing inner html with js</p>
+
+<button onclick="para()">para change</button>
+
+<script type="text/javascript" src="f.js"></script>
+
+<script>
+document.getElementById("para").innerHTML = 5 + 6;
+</script>
+
+
+
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+
+<h1> alert code below</h1>
+<script type="text/javascript">
+window.alert("window.alert used")	
+</script>
+
+<button onclick="emit()">alert me again</button>
+
+</body>
+
+<button onclick="emitNoWindowObject()">no window object</button>
+
+
+
+<button onclick="window.print()">Print this page</button>
+
+
+</html>

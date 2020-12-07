@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Objects
+</title>
+</head>
+<body>
+
+<h1>JAVASCRIPT OBJECTS</h1>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<button onclick="document.getElementById('demo').innerHTML=car.fname">
+	function body of object
+</button>
+
+<button onclick="document.getElementById('demo2').innerHTML=car.fname()+' '+car.name+' '+car.type">
+	all details
+</button>
+
+
+
+
+
+<script type="text/javascript">
+	var car={
+		type:"4 wheeler",
+		name:"gopi car",
+		fname:function(){
+			return "hello world";
+		}
+
+	};
+
+	document.getElementById("demo3").innerHTML=car['type'];
+	document.getElementById("demo4").innerHTML=car.type;
+
+</script>
+
+
+</body>
+</html>
+
+
+<!--
+
+JAVASCRIPT OBJECTS
+function(){ return "hello world"; }
+
+hello world gopi car 4 wheeler
+
+function body of object all details
+
+
+-->

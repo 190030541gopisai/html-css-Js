@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number Methods</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+	<p id="demo8"></p>
+	<p id="demo9"></p>
+	<p id="demo10"></p>
+	<p id="demo11"></p>
+	<p id="demo12"></p>
+	<p id="demo13"></p>
+	<p id="demo14"></p>
+	<p id="demo15"></p>
+	<p id="demo16"></p>
+	<p id="demo17"></p>
+	<p id="demo18"></p>
+	<p id="demo19"></p>
+	<p id="demo20"></p>
+	<p id="demo21"></p>
+	<p id="demo22"></p>
+	<p id="demo23"></p>
+	<p id="demo24"></p>
+	<script type="text/javascript">
+		var x=120;
+		document.getElementById('demo').innerHTML=x;
+		document.getElementById('demo2').innerHTML=typeof x;
+		var y=3.14;
+		document.getElementById('demo3').innerHTML=y;
+		document.getElementById('demo4').innerHTML=typeof y;
+
+
+		//methods start here
+		//toSTring just returns the new string does not changes the number to string
+
+		var x=123;
+		x=x.toString();
+		document.getElementById('demo5').innerHTML=x;
+		document.getElementById('demo6').innerHTML=typeof x;
+
+
+		var x = 9.656;
+		/*
+		x.toExponential(2);     // returns 9.66e+0
+		x.toExponential(4);     // returns 9.6560e+0
+		x.toExponential(6);     // returns 9.656000e+0
+		*/
+		document.getElementById('demo7').innerHTML=
+		x.toExponential() + "<br>" + 
+		x.toExponential(2)+"<br>"+
+		x.toExponential(4)+"<br>"+
+		x.toExponential(6)+"<br>";
+
+
+		/*
+		toFixed() returns a string, with the number written with a specified number of decimals:
+		var x = 9.656;
+		x.toFixed(0);           // returns 10
+		x.toFixed(2);           // returns 9.66
+		x.toFixed(4);           // returns 9.6560
+		x.toFixed(6);           // returns 9.656000
+		*/
+		
+		var x=9.656;
+		document.getElementById('demo8').innerHTML=
+		x.toFixed()+"<br>"+
+		x.toFixed(2)+"<br>"+
+		x.toFixed(4)+"<br>"+
+		x.toFixed(6)+"<br>"+
+		x.toFixed(50)+"<br>"+
+		typeof x.toFixed(2)+"<br>";
+		//see above output
+
+
+		//toPrecision() returns a string, with a number written with a specified length:
+
+		var x=9.656;
+		document.getElementById('demo9').innerHTML=
+		x.toPrecision()+"<br>"+
+		x.toPrecision(2)+"<br>"+
+		x.toPrecision(4)+"<br>"+
+		x.toPrecision(6)+"<br>"+
+		x.toPrecision(50)+"<br>"+
+		typeof x.toPrecision()+"<br>";
+
+
+		//valueOf()
+		//The valueOf() method returns a number as a number:
+		var x = 123;
+
+		document.getElementById("demo10").innerHTML = 
+		  x.valueOf() + "<br>" +
+		  (123).valueOf() + "<br>" +
+		  (100 + 23).valueOf()+"<br"+
+		  typeof (100).valueOf()+"<br>"; 
+
+
+		  //All JavaScript data types have a valueOf() and a toString() method
+
+
+
+		  document.getElementById("demo11").innerHTML = 
+		  "The Number() method converts variables to numbers:"+"<br>"+
+		  Number(true) + "<br>" +
+		  Number(false) + "<br>" +
+		  Number("10") + "<br>" + 
+		  Number("  10") + "<br>" +
+		  Number("10  ") + "<br>" +
+		  Number(" 10  ") + "<br>" +
+		  Number("10.33") + "<br>" + 
+		  Number("10,33") + "<br>" +
+		  Number("10 33") + "<br>" +
+		  Number("John");
+
+
+		  //The Number() Method Used on Dates
+		  //The Number() method above returns the number of milliseconds since 1.1.1970.
+		var x = new Date("2017-09-30");
+		document.getElementById("demo12").innerHTML = Number(x); 
+
+
+
+		//similarly for The parseFloat() Method
+		document.getElementById("demo13").innerHTML = 
+		  "JavaScript Global Functions The global JavaScript function parseInt() converts strings to numbers:"+"<br>"+
+		  parseInt("10") + "<br>" +
+		  parseInt("10.33") + "<br>" +
+		  parseInt("10 6") + "<br>" +  
+		  parseInt("10 years") + "<br>" +  
+		  parseInt("years 10"); 
+
+
+		  document.getElementById("demo14").innerHTML = 
+		  "JavaScript Global Methods The parseFloat() method converts strings to numbers:"+"<br>"+
+		  parseFloat("10") + "<br>" +
+		  parseFloat("10.33") + "<br>" +
+		  parseFloat("10 6") + "<br>" +  
+		  parseFloat("10 years") + "<br>" +
+		  parseFloat("years 10");  
+
+
+		  /*
+				Number Properties
+				Property	Description
+				MAX_VALUE	Returns the largest number possible in JavaScript
+				MIN_VALUE	Returns the smallest number possible in JavaScript
+				POSITIVE_INFINITY	Represents infinity (returned on overflow)
+				NEGATIVE_INFINITY	Represents negative infinity (returned on overflow)
+				NaN	Represents a "Not-a-Number" value
+		  */
+		  var x = Number.MIN_VALUE;
+		  document.getElementById("demo15").innerHTML = x;
+
+
+		  var x = Number.MAX_VALUE;
+	      document.getElementById("demo16").innerHTML = x; 
+
+	      var x = Number.POSITIVE_INFINITY;
+		  document.getElementById("demo17").innerHTML = x;
+
+		  var x = 1 / 0;
+		  document.getElementById("demo18").innerHTML = x;
+
+		  var x = Number.NEGATIVE_INFINITY;
+		document.getElementById("demo19").innerHTML = x;
+
+
+		var x = -1 / 0;
+		document.getElementById("demo20").innerHTML = x;
+
+		document.getElementById("demo21").innerHTML = Number.NaN;
+
+
+		document.getElementById("demo22").innerHTML = 100 / "Apple";
+
+
+		var x = 6;
+		document.getElementById("demo23").innerHTML = x.MAX_VALUE;
+	</script>
+</body>
+</html>

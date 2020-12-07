@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+	<p id="demo8"></p>
+	<p id="demo9"></p>
+	<p id="demo10"></p>
+	<p id="demo11"></p>
+	<p id="demo12"></p>
+	<p id="demo13"></p>
+	<p id="demo14"></p>
+	<p id="demo15"></p>
+	<p id="demo16"></p>
+	<p id="demo17"></p>
+	<p id="demo18"></p>
+	<p id="demo19"></p>
+	<p id="demo20"></p>
+	<p id="demo21"></p>
+	<p id="demo22"></p>
+	<p id="demo23"></p>
+	<p id="demo24"></p>
+
+	<script type="text/javascript">
+		var arr1=[10,20,30,40,50,60];
+		//converts arr1 to "10,20,30" String
+		document.getElementById("demo").innerHTML=arr1.toString();
+
+		//join method
+		document.getElementById("demo2").innerHTML=arr1.join("*");
+		//popping and pushing
+
+		document.getElementById("demo3").innerHTML=arr1.pop();
+		document.getElementById("demo3").innerHTML=arr1+"<br>";
+
+
+		//pushing
+		document.getElementById("demo4").innerHTML=arr1.push(40);
+		document.getElementById("demo4").innerHTML=arr1;
+
+		//shift
+		document.getElementById("demo5").innerHTML=arr1.shift();
+		document.getElementById("demo5").innerHTML=arr1;
+		//unshift
+		document.getElementById("demo6").innerHTML=arr1.unshift(60);
+		document.getElementById("demo6").innerHTML=arr1;
+
+		//changing elements
+		arr1[0]=1;
+		document.getElementById("demo7").innerHTML=arr1;	
+		//appending at the end
+		arr1[arr1.length]=5;
+		document.getElementById("demo8").innerHTML=arr1;	
+
+		//appending at some other places crates holes
+		arr1[arr1.length+10]=5;
+		document.getElementById("demo9").innerHTML=arr1;
+
+		//deleting elements
+		delete arr1[0];
+		document.getElementById("demo10").innerHTML=arr1;
+
+		//splice(pos,deleted elements count,----arguments to inserted----,,,,,,) --method deletes elements and also inserts elements from deleted postion
+		document.getElementById("demo11").innerHTML=arr1.splice(2,2,"deleted1","deleted2");
+		document.getElementById("demo11").innerHTML=arr1;
+
+		//splice(pos,no.of elements to be removed) to remove elements
+		//output delete1 ,delete2 elements are removed
+		document.getElementById("demo12").innerHTML=arr1.splice(2,2);
+		document.getElementById("demo12").innerHTML=arr1;
+
+		//concat() method
+		//The concat() method does not change the existing arrays. It always returns a new array.
+		var arr2=[70,80,90,100];
+		arr1=arr1.concat(arr2);
+		document.getElementById("demo13").innerHTML=arr1;
+
+		//concat(------multiple arguments can be concated);
+		var arr3=[101,102,103,104,105];
+		arr1=arr1.concat(arr2,arr3);
+		document.getElementById("demo14").innerHTML=arr1;
+
+		//slice() method
+		//The slice() method creates a new array. It does not remove any elements from the source array.
+		document.getElementById("demo15").innerHTML=arr1.slice(5);
+		//slice(arg1,arg2)
+		document.getElementById("demo16").innerHTML=arr1.slice(15,20);
+
+		//There are no built-in functions for finding the highest or lowest value in a JavaScript array.
+		
+
+
+
+
+	</script>
+
+</body>
+</html>

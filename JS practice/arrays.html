@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays</title>
+</head>
+<body>
+
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<script type="text/javascript">
+		var arr1=[10,20,30,40];
+		var arr2=[50,
+		60,
+		70,
+		80];
+		document.getElementById('demo').innerHTML=arr1;
+		document.getElementById('demo2').innerHTML=arr2;
+		document.getElementById('demo3').innerHTML=typeof arr2;
+
+
+		//looping array elements
+		var text="<ul>";
+		for(var i =0;i<arr1.length;i++)
+		{
+			text+="<li>"+arr1[i]+"</li>"
+		}
+		text+="</ul>";
+		document.getElementById('demo4').innerHTML=text;
+
+		//looping You can also use the Array.forEach() function:
+		var text2="<ul>";
+		arr1.forEach(myFunction);
+		text2+="</ul>";
+		document.getElementById('demo5').innerHTML=text2;
+		function myFunction(val) {
+  			text2 += "<li>" + val + "</li>";
+		} 
+
+  
+
+       
+
+	</script>
+
+
+
+	<p>If you use a named index when accessing an array, JavaScript will redefine the array to a standard object, and some array methods and properties will produce undefined or incorrect results.</p>
+
+	<p id="demo6"></p>
+
+	<script>
+		var person = [];
+		person["firstName"] = "John";
+		person["lastName"] = "Doe";
+		person["age"] = 46; 
+		document.getElementById("demo6").innerHTML =
+		person[0] + " " + person.length;
+	</script>
+	<script type="text/javascript">
+		
+	/*
+		var points = new Array();     // Bad
+		var points = [];              // Good 
+		These two different statements both create a new array containing 6 numbers:
+
+		var points = new Array(40, 100, 1, 5, 25, 10); // Bad
+		var points = [40, 100, 1, 5, 25, 10];          // Good
+	*/
+	</script>
+
+	<p id="demo7"></p>
+	<script>
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		document.getElementById("demo7").innerHTML = Array.isArray(fruits);
+	</script>
+
+
+	<p>This "home made" isArray() function returns true when used on an array:</p>
+
+	<p id="demo8"></p>
+
+	<script>
+			var fruits = ["Banana", "Orange", "Apple", "Mango"];
+			document.getElementById("demo8").innerHTML = isArray(fruits);
+
+			function isArray(myArray) {
+			  return myArray.constructor.toString().indexOf("Array") > -1;
+			}
+	</script>
+
+	<p>The instanceof operator returns true when used on an array:</p>
+
+	<p id="demo9"></p>
+
+	<script>
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		document.getElementById("demo9").innerHTML = fruits instanceof Array;
+	</script>
+</body>
+</html>

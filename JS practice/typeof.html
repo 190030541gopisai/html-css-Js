@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>typeof</title>
+</head>
+<body>
+
+	<a  href="https://www.w3schools.com/js/js_datatypes.asp">
+		w3schools link for datatypes
+	</a>
+	<br>
+	<p id="demo"></p>
+	
+	<script type="text/javascript">
+		var num= 1;
+	var str="";
+	var n=null;
+	var u=undefined;
+
+	document.getElementById("demo").innerHTML=
+	num +" "+typeof num +"<br>"+
+	str +" "+typeof str +"<br>"+
+	n +" "+typeof n +"<br>"+
+	u +" "+typeof u+"<br>"+
+	"number==undefined "+(n==u)+"<br>"+
+	"number===undefined "+(n===u)+"<br>"+
+	"emptyString==null  "+(str==n)+"<br>"+
+	typeof {name:'john', age:34} + "<br>" +
+typeof [1,2,3,4] + "<br>" +
+typeof null + "<br>" +
+typeof function myFunc(){};
+
+	;
+
+
+	</script>
+
+
+</body>
+</html>
+
+
+<!-- 
+	output
+w3schools link for datatypes
+1 number
+string
+null object
+undefined undefined
+number==undefined true
+number===undefined false
+emptyString==null false
+object
+object
+object
+function
+-->

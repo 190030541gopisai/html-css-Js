@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numbers</title>
+</head>
+<body>
+
+	<p id="demo"></p>
+	<h3>JavaScript Numbers
+Extra large or extra small numbers can be written with scientific (exponent) notation:</h3>
+	<p id="demo2"></p>
+	<h3>Precision
+Integers (numbers without a period or exponent notation) are accurate up to 15 digits.</h3>
+	<p id="demo3"></p>
+	<h3>The maximum number of decimals is 17, but floating point arithmetic is not always 100% accurate:</h3>
+	<p id="demo4"></p>
+	<h3>To solve the problem above, it helps to multiply and divide:</h3>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<h3>A common mistake is to expect this result to be 102030:</h3>
+	<p id="demo7"></p>
+	<h3>JavaScript will try to convert strings to numbers in all numeric operations:</h3>
+	<p id="demo8"></p>
+	<h3>JavaScript will try to convert strings to numbers when multiplying:</h3>
+	<p id="demo9"></p>
+    <h3>var z = x - y;       // z will be 90
+    JavaScript will try to convert strings to numbers when subtracting:</h3>
+	<p id="demo10"></p>
+	<h3>JavaScript will NOT convert strings to numbers when adding:</h3>
+	<p id="demo11"></p>
+	<h3>You can use the global JavaScript function isNaN() to find out if a value is a number:</h3>
+	<p id="demo12"></p>
+	<h3>Nan+5=</h3>
+	<p id="demo13"></p>
+	<h3>NaN is a number: typeof NaN returns number:</h3>
+	<p id="demo14"></p>
+	<h3>Infinity is returned if you calculate a number outside the largest possible number:</h3>
+	<p id="demo15"></p>
+	<h3>Infinity is a number: typeof Infinity returns number.</h3>
+	<p id="demo16"></p>
+	<h3>Numeric constants, preceded by 0x, are interpreted as hexadecimal:</h3>
+	<p id="demo17"></p>
+	<h3>The toString() method can output numbers from base 2 to 36:</h3>
+	<p id="demo18"></p>
+	<h3 style="color: red;">Do not create Number objects. It slows down execution speed.
+		The new keyword complicates the code. This can produce some unexpected results:
+	</h3>
+
+	<h3 style="color: red;">Note the difference between (x==y) and (x===y).Comparing two JavaScript objects will always return false.
+	</h3>
+	<p id="demo19"></p>
+	<p id="demo20"></p>
+	<p id="demo21"></p>
+	<p id="demo22"></p>
+	<p id="demo23"></p>
+	<p id="demo24"></p>
+
+	<script>
+	var x = 3.14;
+	var y = 3;
+	document.getElementById("demo").innerHTML = x + "<br>" + y;
+
+
+	var x = 123e5;
+var y = 123e-5;
+document.getElementById("demo2").innerHTML = x + "<br>" + y;
+
+
+
+	var x = 999999999999999;
+	var y = 9999999999999999;
+	document.getElementById("demo3").innerHTML = x + "<br>" + y;
+
+	var x = 0.2 + 0.1;
+    document.getElementById("demo4").innerHTML = "0.2 + 0.1 = " + x;
+
+
+    var x = 0.2 + 0.1;
+	document.getElementById("demo5").innerHTML = "0.2 + 0.1 = " + x;
+	var y = (0.2*10 + 0.1*10) / 10;
+	document.getElementById("demo6").innerHTML = "0.2 + 0.1 = " + y;
+
+
+	var x = 10;
+	var y = 20;
+	var z = "30";
+	var result = x + y + z;
+	document.getElementById("demo7").innerHTML = result;
+
+
+
+	var x = "100";
+	var y = "10";
+	var z = x / y;   
+	document.getElementById("demo8").innerHTML = z;
+
+
+	var x = "100";
+var y = "10";
+var z = x * y;   
+document.getElementById("demo9").innerHTML = z;
+
+
+	var x = "100";
+	var y = "10";
+	var z = x - y;   
+	document.getElementById("demo10").innerHTML = z;
+
+
+	var x = "100";
+	var y = "10";
+	var z = x + y;   
+	document.getElementById("demo11").innerHTML = z;
+
+
+	var x = 100 / "Apple";
+document.getElementById("demo12").innerHTML = isNaN(x);
+
+	var x = NaN;
+	var y = 5;
+	document.getElementById("demo13").innerHTML = x + y;
+
+
+	var x = NaN;
+document.getElementById("demo14").innerHTML = typeof x;
+
+
+
+	var myNumber = 2; 
+	var txt = "";
+	while (myNumber != Infinity) {
+	   myNumber = myNumber * myNumber;
+	   txt = txt + myNumber + "<br>";
+	}
+	document.getElementById("demo15").innerHTML = txt;
+	
+	var x = Infinity;
+document.getElementById("demo16").innerHTML = typeof x;
+
+
+document.getElementById("demo17").innerHTML = "0xFF = " + x;
+
+
+	var myNumber = 32;
+	document.getElementById("demo18").innerHTML =
+	"32 = " + "<br>" + 
+	" Decimal " + myNumber.toString(10) + "<br>" +
+	" Hexadecimal " + myNumber.toString(16) + "<br>" +
+	" Octal " + myNumber.toString(8) + "<br>" +
+	" Binary " + myNumber.toString(2);
+
+
+
+	var x = new Number(500);  // x is an object
+	var y = new Number(500);  // y is an object
+	document.getElementById("demo19").innerHTML = (x==y);
+	</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
