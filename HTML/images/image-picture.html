@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  
+        The HTML <picture> element allows you to display different pictures for different devices or screen sizes. 
+    
+        The HTML <picture> element gives web developers more flexibility in specifying image resources.   
+        
+        The HTML <picture> element gives web developers more flexibility in specifying image resources.
+
+        The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
+
+        Each <source> element has a media attribute that defines when the image is the most suitable.
+    -->
+    <picture>
+        <source media="(min-width:900px)" srcset="./efile-tower.jpg">
+        <source media="(min-width:650px)" srcset="img_food.jpg"> 
+        <source media="(min-width:550px)" srcset="img_girl.jpg">
+        <img src="./giphy.gif" alt="funnyimage">
+    </picture>
+    <!--  
+        Note: Always specify an <img> element as the last child element of the <picture> element. 
+        The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags matches.
+    -->
+    <!--  
+        When to use the Picture Element
+        There are two main purposes for the <picture> element:
+
+        1. Bandwidth
+        If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first <source> element with matching attribute values, and ignore any of the following elements.
+
+        2. Format Support
+        Some browsers or devices may not support all image formats. By using the <picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements.
+            
+        The browser will use the first image format it recognizes:
+
+        <picture>
+        <source srcset="img_avatar.png">
+        <source srcset="img_girl.jpg">
+        <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+        </picture>
+
+
+    -->
+
+    <picture>
+        <source media="(min-width:650px)" srcset="img_food.jpg">
+        <img src="./img_girl.jpg" alt="image img_girl" style="width: auto;">
+    </picture>
+
+    <!--  
+        Note: The browser will use the first <source> element with matching attribute values, and ignore any following <source> elements.
+    -->
+
+
+</body>
+</html>
