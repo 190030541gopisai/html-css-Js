@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--  
+        Show Different Images Depending on Browser Width
+        The HTML <picture> element allows you to define different images for different browser window sizes.
+    -->
+    <picture>
+        <source srcset="images/img_food.jpg" media="(max-width:900px)"> 
+        <img src="./papa2.jpg" alt="papa2" style="max-width: 500px;height: auto;">
+    </picture>
+    <hr>
+    <img src="images/img_girl.jpg" alt="image girl" style="width: 100%;">
+    <!--  
+        Notice that in the example above, the image can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property instead.
+
+        Using the max-width Property
+        If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:
+    -->
+    <img src="images/img_girl.jpg" alt="image girl" style="max-width: 100%;height:auto;">
+
+    <!--  
+        Responsive Text Size
+        The text size can be set with a "vw" unit, which means the "viewport width".
+
+        That way the text size will follow the size of the browser window:
+
+        Hello World
+        Resize the browser window to see how the text size scales.
+    -->
+    <h1 style="font-size: 10vw;">hello world</h1>
+    <!--  
+        Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
+    -->
+    
+    
+</body>
+</html>

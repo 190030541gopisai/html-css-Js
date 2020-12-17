@@ -1,3 +1,12 @@
+<!--  
+    Chapter Summary
+The id attribute is used to specify a unique id for an HTML element
+The value of the id attribute must be unique within the HTML document
+The id attribute is used by CSS and JavaScript to style/select a specific element
+The value of the id attribute is case sensitive
+The id attribute is also used to create HTML bookmarks
+JavaScript can access an element with a specific id with the getElementById() method
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,6 +99,9 @@
     <a href="#H4">heading 4</a>
     <br>
     <a href="#H10">Heading 10</a>
+    <br>
+    <a href="links-create-bookmarks.html#C4" target="_blank">jump to Chapter 4</a>
+
 
     <h1>Heading 1</h1>
     <h1>Heading 2</h1>
@@ -103,6 +115,20 @@
     <h1 id="H10">Heading 10</h1>
     <h1>Heading 11</h1>
     <h1>Heading 12</h1>
+
+    <button onclick="myfunction()">
+            change heading 4 
+    </button>
+    <script>
+        function myfunction(){
+            document.getElementById('H4').innerHTML="Changed heading 4";
+            document.getElementById('H4').style.backgroundColor='red';
+        }
+    </script>
+
+
+
+
 
 
     

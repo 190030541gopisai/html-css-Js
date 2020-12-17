@@ -1,0 +1,114 @@
+<!--  
+    Chapter Summary
+The <kbd> element is used to define keyboard input
+The <samp> element is used to define sample output from a computer program
+The <code> element  is used to define a piece of computer code
+The <var> element  is used to defines a variable in programming or in a mathematical expression
+The <pre> element is used to define preformatted text
+
+HTML Computer Code Elements
+Tag	Description
+<code>	Defines programming code
+<kbd>	Defines keyboard input 
+<samp>	Defines computer output
+<var>	Defines a variable
+<pre>	Defines preformatted text
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+    </code>
+
+    <!-- HTML <kbd> For Keyboard Input
+        <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+        Result:
+
+        Save the document by pressing Ctrl + S
+
+    -->
+    <p>press this <kbd>Ctrl + S</kbd></p>
+
+    <!--  
+        HTML <samp> For Program Output
+        The HTML <samp> element is used to define sample output from a computer program. The content inside is displayed in the browser's default monospace font.
+
+        Example
+        Define some text as sample output from a computer program in a document:
+
+        <p>Message from my computer:</p>
+        <p><samp>File not found.<br>Press F1 to continue</samp></p>
+    -->
+    <h2>The samp Element</h2>
+
+    <p>The samp element is used to define sample output from a computer program.</p>
+    <p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+
+    <!-- 
+        HTML <code> For Computer Code
+        HTML <code> For Computer Code
+        The HTML <code> element  is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.
+
+        Example
+        Define some text as computer code in a document:
+
+        <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+        </code>
+        Result:
+
+        x = 5; y = 6; z = x + y;
+
+     -->
+     <!--  
+         Notice that the <code> element does not preserve extra whitespace and line-breaks.
+
+        To fix this, you can put the <code> element inside a <pre> element:
+
+        Example
+        <pre>
+        <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+        </code>
+        </pre>
+
+        Result:
+
+        x = 5;
+        y = 6;
+        z = x + y;
+     -->
+     <pre>
+        <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+        </code>
+    </pre>
+     <!-- 
+         HTML <var> For Variables
+         The HTML <var> element  is used to defines a variable in programming or in a mathematical expression. The content inside is typically displayed in italic.
+
+
+      -->
+
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+    <!-- Result: 
+    The area of a triangle is: 1/2 x b x h, where b is the base, and h is the vertical height.
+    -->
+
+</body>
+</html>
