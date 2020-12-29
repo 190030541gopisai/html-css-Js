@@ -1,0 +1,8 @@
+body{
+    background-color: powderblue;
+}
+h1,p{
+    color: white;
+    text-align: center;
+    font-size: 200%;
+}

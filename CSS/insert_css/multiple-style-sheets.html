@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Style Sheets</title>
+	<link rel="stylesheet" href="./external.css" />
+	<style type="text/css">
+		h1{
+			color:red;
+		}
+	</style>
+	<!--  
+		Multiple Style Sheets
+		If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
+
+		Assume that an external style sheet has the following style for the <h1> element:
+
+		h1 {
+		  color: navy;
+		}
+		Then, assume that an internal style sheet also has the following style for the <h1> element:
+
+		h1 {
+		  color: orange;   
+		}
+		Example
+		If the internal style is defined after the link to the external style sheet, the <h1> elements will be "orange":
+
+		Example
+		However, if the internal style is defined before the link to the external style sheet, the <h1> elements will be "navy": 
+
+		<head>
+		<style>
+		h1 {
+		  color: orange;
+		}
+		</style>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		</head>
+	-->
+</head>
+<body>
+	<h1>This is Heading</h1>
+	<p>This is Paragraph</p>
+</body>
+</html>

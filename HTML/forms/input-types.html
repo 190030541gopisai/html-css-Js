@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  
+        This chapter describes the different types for the HTML <input> element.
+
+        HTML Input Types
+        Here are the different input types you can use in HTML:
+
+        <input type="button">
+        <input type="checkbox">
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="email">
+        <input type="file">
+        <input type="hidden">
+        <input type="image">
+        <input type="month">
+        <input type="number">
+        <input type="password">
+        <input type="radio">
+        <input type="range">
+        <input type="reset">
+        <input type="search">
+        <input type="submit">
+        <input type="tel">
+        <input type="text">
+        <input type="time">
+        <input type="url">
+        <input type="week">
+        Tip: The default value of the type attribute is "text"
+    -->
+    <!-- 
+        Input Type Text
+        <input type="text"> defines a single-line text input field:
+    -->
+    <form>
+        <label for="fname">First Name :</label>
+        <br>
+        <input type="text" name="fname" id="fname">
+        <br>
+        <label for='lname'>Last Name :</label>
+        <br>
+        <input type="text" name="lname" id=lname> 
+        <br>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+    <!--  
+            Input Type Password
+            <input type="password"> defines a password field:
+    -->
+    <hr>
+
+    <form action="./thanks.html" target="_blank" method="post">
+        <fieldset>
+            <legend>Login Details : </legend>
+            <label for="email">Email : </label>
+            <br>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="password">Password : </label>
+            <br>
+            <input type="password" name="password" id="password">
+            <br>
+            <br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+    <!--  
+        file:///E:/new%20folder/HTML%20CSS%20JS/html-css-Js/HTML/forms/thanks.html?email=cse%40gmail.com&password=
+    -->
+    <hr>
+    <!--  
+        Input Type Submit
+        <input type="submit"> defines a button for submitting form data to a form-handler.
+
+        The form-handler is typically a server page with a script for processing input data.
+
+        The form-handler is specified in the form's action
+    -->
+    <h1>Submit type</h1>
+    <form action="./thanks.html" target="_blank">
+        <label for="name">Name : </label>
+        <input type="text" name="name" id="name">
+        <input type="submit" value="submit">
+    </form>
+    <!--  
+        file:///E:/new%20folder/HTML%20CSS%20JS/html-css-Js/HTML/forms/thanks.html?name=GOTTIPATI+gopi+sai
+    -->
+    <!--  
+        Input Type Reset
+        <input type="reset"> defines a reset button that will reset all form values to their default values:
+    -->
+    <hr>
+    <h1>Reset input</h1>
+    <form action="./thanks.html" target="_blank">
+        <label for="name">Name : </label>
+        <input type="text" name="name" id="name">
+        <input type="reset" >
+    </form>
+    <!--  
+        Input Type Radio
+        <input type="radio"> defines a radio button.
+
+        Radio buttons let a user select ONLY ONE of a limited number of choices:
+    -->
+    <hr>
+    <h1>Radio Button</h1>
+    <form>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">female</label>
+    </form>
+    <!--  
+        Input Type Checkbox
+        <input type="checkbox"> defines a checkbox.
+
+        Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+    -->
+    <hr>
+    <h1>Checkbox</h1>
+    <form action="./thanks.html" target="_blank">
+        <input type="checkbox" name="vehicle" id="car" value="car">
+        <label for="car">I Have a Car</label>
+        <input type="checkbox" name="vehicle" id="bike" value="bike">
+        <label for="bike">I Have a Bike</label>
+        <input type="submit" value="submit">
+
+    </form>
+    <!--  
+        file:///E:/new%20folder/HTML%20CSS%20JS/html-css-Js/HTML/forms/thanks.html?vehicle=car&vehicle=bike
+    -->
+    <hr>
+    <h1>Type Button</h1>    
+    <form>
+        <input type="button" onclick="alert('Hello world')" value="alert">
+    </form>
+
+    <hr>
+    -------------
+    <hr>
+    <h1>Type color</h1>  
+    <form action="./thanks.html" target="_blank">
+        <label for="favcolor">
+            Favourate color
+        </label>
+        <input type="color" name="favcolor" id="favcolor">
+        <input type="submit" value="submit">
+    </form>
+    <!--  
+        file:///E:/new%20folder/HTML%20CSS%20JS/html-css-Js/HTML/forms/thanks.html?favcolor=%23000000
+    -->
+
+    ------------------------
+    <hr>
+    <h1>Date Type</h1>
+    <form action="./thanks.html" target="_blank">
+        <label for="birthday">Birthday :</label><br>
+        <input type="date" name="birthday">
+        <input type="submit">
+    </form>
+    <!--  
+        file:///E:/new%20folder/HTML%20CSS%20JS/html-css-Js/HTML/forms/thanks.html?birthday=2020-12-23
+    -->
+    ---------------------
+    <hr>
+    <h1>Min and Max For Date</h1>
+    <form action="./thanks.html" target="_blank">
+        <label for="birthday">Birthday :</label><br>
+        <input type="date" name="birthday" min="2000-01-01" max="2020-12-02">
+        <input type="submit">
+    </form>
+
+
+
+</body>
+</html>
