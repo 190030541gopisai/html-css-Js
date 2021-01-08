@@ -1,0 +1,39 @@
+/*
+
+CSS Outline Width
+The outline-width property specifies the width of the outline, and can have one of the following values:
+
+thin (typically 1px)
+medium (typically 3px)
+thick (typically 5px)
+A specific size (in px, pt, cm, em, etc)
+
+*/
+div.thin{
+	border:1px solid black;
+	outline-width:thin;
+	outline-style:solid;
+	outline-color:red;
+}
+div.medium{
+	border:1px outset green;
+	outline-width:medium;
+	outline-style:dashed;
+	outline-color:yellow;
+}
+div.large{
+
+	border:1px inset black;
+	outline-width:large;
+	outline-style:solid;
+	outline-color:red;
+}
+div.ownwidth{
+	border:2px groove black;
+	outline-width:10px;
+	outline-style:solid;
+	outline-color:gray;
+	
+}
+
+

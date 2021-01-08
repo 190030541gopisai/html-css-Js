@@ -1,0 +1,52 @@
+/*
+
+CSS Outline Color
+The outline-color property is used to set the color of the outline.
+
+The color can be set by:
+
+name - specify a color name, like "red"
+HEX - specify a hex value, like "#ff0000"
+RGB - specify a RGB value, like "rgb(255,0,0)"
+HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
+invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)
+
+*/
+/*
+note:-----important
+we must specify the outline-style
+
+*/
+
+div.ex1{
+	border:1px solid black;
+	outline-style:solid;
+	outline-color:green;
+	outline-width:3px;
+}
+div.ex2{
+	border:1px solid black;
+	outline-style:solid;
+	outline-color:#0000ff;/* rgb   -----blue*/
+	outline-width:3px;
+}
+div.ex3 {
+  outline-style: solid;
+  outline-color: rgb(255, 0, 0); /* red */
+}
+div.ex4 {
+  outline-style: solid;
+  outline-color: hsl(0, 100%, 50%); /* red */
+}
+
+/*
+
+Invert Color
+The following example uses outline-color: invert, which performs a color inversion. This ensures that the outline is visible, regardless of color background:
+
+*/
+div.invert{
+	border:1px solid green;
+	outline-style:solid;
+	outline-color:invert;
+}

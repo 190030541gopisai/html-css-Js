@@ -28,3 +28,30 @@ none - Defines no outline
 hidden - Defines a hidden outline
 
 */
+div.dotted{
+	outline-style:dotted;
+}
+div.dashed{
+	outline-style:dashed;
+}
+div.solid{
+	outline-style:solid;
+}
+div.double{
+	outline-style:double;
+}
+div.groove{
+
+	outline-style:groove;
+}
+div.ridge{
+	outline-style:ridge;
+}
+div.inset{
+	outline-style:inset;
+}
+div.outset{
+	outline-style:outset;
+}
+
+
