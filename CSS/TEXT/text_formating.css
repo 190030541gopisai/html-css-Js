@@ -1,0 +1,38 @@
+div.one{
+	border:1px solid gray;
+	padding:10px;
+}
+div.one>h1{
+	text-align:center;
+	text-transform:uppercase;
+	color:green;
+}
+div.one>p{
+	text-indent:250px;
+	text-align:justify;
+	letter-spacing:3px;
+}
+div.one>p>a{
+	text-decoration:none;
+	color:red;
+}
+
+/*
+
+Text Color
+The color property is used to set the color of the text. The color is specified by:
+
+a color name - like "red"
+a HEX value - like "#ff0000"
+an RGB value - like "rgb(255,0,0)"
+Look at CSS Color Values for a complete list of possible color values.
+
+Note: For W3C compliant CSS: If you define the color property, you must also define the background-color.
+
+*/
+.two>h1{
+	color:rgba(50,270,200,0.5);
+	background-color:gray;
+}
+
+

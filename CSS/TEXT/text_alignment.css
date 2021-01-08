@@ -1,0 +1,56 @@
+/*
+
+Text Alignment
+The text-align property is used to set the horizontal alignment of a text.
+
+A text can be left or right aligned, centered, or justified.
+
+The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left):
+
+
+*/
+.three>.left{
+	text-align:left;
+}
+.three>.center{
+	text-align:center;
+}
+.three>.right{
+	text-align:right;
+}
+.three{
+	border:2px solid black;
+}
+
+.four{
+	margin-top:10px;
+	border:1px solid black;
+	text-align:justify;
+}
+
+.text_direction{
+	margin-top:10px;
+	border:1px solid gray;
+}
+.text_direction>.ex1{
+	
+	direction:rtl;
+	unicode-bidi:bidi-override;/*        new property     */
+}
+
+
+
+img.top {
+  vertical-align: top;
+}
+
+img.middle {
+  vertical-align: middle;
+}
+
+img.bottom {
+  vertical-align: bottom;
+}
+
+
+
