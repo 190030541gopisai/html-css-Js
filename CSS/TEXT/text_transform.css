@@ -1,0 +1,25 @@
+/*
+
+Text Transformation
+The text-transform property is used to specify uppercase and lowercase letters in a text.
+
+It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:
+
+*/
+
+h1.uppercase{
+
+	text-transform:uppercase;
+}
+h2.lowercase{
+
+	text-transform:lowercase;
+}
+h3.capitalize{
+
+	text-transform:capitalize;
+}
+.text_transform{
+
+	border:2px solid black;
+}

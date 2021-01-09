@@ -1,0 +1,22 @@
+.text_decoration{
+	border:2px solid black;
+	
+}
+a.text_decoration{
+	text-decoration:none
+}
+.text_decoration>h2{
+	text-decoration:overline;
+}
+.text_decoration>h3{
+	text-decoration: line-through;
+}
+.text_decoration>h4{
+
+	text-decoration:underline;
+}
+/*
+
+Note: It is not recommended to underline text that is not a link, as this often confuses the reader.
+
+*/

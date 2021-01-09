@@ -1,0 +1,76 @@
+.text_spacing{
+	border:2px solid black;
+}
+.text_indent{
+	text-indent:50px;
+}
+.text_spacing>h2{
+
+	letter-spacing:3px;
+}
+.text_spacing>h3{
+
+	letter-spacing:-3px;
+}
+
+
+/*
+Line Height
+The line-height property is used to specify the space between lines:
+
+*/
+.big{
+	line-height:4.0;/* i think in cm*/
+	color:red;
+}
+.small{
+	line-height:0.5;
+	color:green;
+}
+
+
+/*
+
+Word Spacing
+The word-spacing property is used to specify the space between the words in a text.
+
+*/
+
+.word_spacing>h1{
+	word-spacing:10px;
+}
+.word_spacing>h2{
+	word-spacing:-5px;
+	color:red;
+
+}
+
+
+/*
+
+Text Shadow
+The text-shadow property adds shadow to text.
+
+In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):
+
+*/
+.text_shadow>h1{
+	text-shadow:2px 2px;
+}
+
+/*
+	Next, add a color (red) to the shadow:
+*/
+.text_shadow>h2{
+	text-shadow:100px 2px red;
+}
+/*
+
+Then, add a blur effect (5px) to the shadow:
+*/
+.text_shadow>h3{
+	text-shadow:100px 2px 5px red;
+}
+
+
+
