@@ -1,0 +1,17 @@
+/*
+Great font pairings are essential to great design.
+
+*/
+
+.greet_font_pairings{
+	background-color:black;
+	font-family:Verdana, sans-serif;
+	font-size:16px;
+	color:gray;
+}
+
+.greet_font_pairings > h1{
+	 font-family: Georgia, serif;
+ 	 font-size: 60px;
+  	 color: white;
+}

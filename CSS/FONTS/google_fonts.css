@@ -1,0 +1,12 @@
+body{
+	  font-family: "Sofia", sans-serif;/* google font*/
+  	  font-size: 30px;
+}
+/*
+
+Note: Requesting multiple fonts may slow down your web pages! So be careful about that.
+
+*/
+.google_fonts{
+	color:black;
+}

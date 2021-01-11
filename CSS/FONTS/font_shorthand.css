@@ -1,0 +1,7 @@
+.font_shorthand>p.a {
+  font: 20px Arial, sans-serif;
+}
+
+.font_shorthand>p.b {
+  font: italic bold 12px/30px Georgia, serif;
+}
