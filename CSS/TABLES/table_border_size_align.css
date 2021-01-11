@@ -1,0 +1,124 @@
+#customers{
+	font-family: Arial, Helvetica, sans-serif;
+ 	border-collapse: collapse;
+  	width: 100%;
+}
+
+#customers td,#customers th{
+	border: 1px solid #ddd;
+  	padding: 8px;
+	/*
+		Horizontal Alignment
+		The text-align property sets the horizontal alignment (like left, right, or center) of the content in <th> or <td>.
+		By default, the content of <th> elements are center-aligned and the content of <td> elements are left-aligned.
+		To center-align the content of  <td> elements as well, use text-align: center:
+	*/
+	text-align:left;
+}
+#customers tr:nth-child(even){
+	background:red;
+}
+#customers th{
+	background:green;
+	/*
+
+		The width and height of a table are defined by the width and height properties.
+
+		The example below sets the width of the table to 100%, and the height of the <th> elements to 70px:
+	*/
+	height:70px;
+	/*
+
+		Vertical Alignment
+		The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>.
+
+		By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements).
+
+		The following example sets the vertical text alignment to bottom for <td> elements:
+	*/
+	vertical-align:bottom;
+}
+
+
+#customers tr:hover{
+	background:gray;
+}
+
+/*
+
+
+Table Borders
+To specify table borders in CSS, use the border property.
+
+The example below specifies a black border for <table>, <th>, and <td> elements:
+
+
+Example
+table, th, td {
+  border: 1px solid black;
+}
+Full-Width Table
+The table above might seem small in some cases. If you need a table that should span the entire screen (full-width), add width: 100% to the <table> element:
+
+
+Example
+table {
+  width: 100%;
+}
+Double Borders
+Notice that the table in the examples above have double borders. This is because both the table and the <th> and <td> elements have separate borders.
+
+To remove double borders, take a look at the example below.
+
+Collapse Table Borders
+The border-collapse property sets whether the table borders should be collapsed into a single border:
+
+
+Example
+table {
+  border-collapse: collapse;
+}
+If you only want a border around the table, only specify the border property for <table>:
+
+
+Example
+table {
+  border: 1px solid black;
+}
+
+
+*/
+
+/*
+
+
+Table Padding
+To control the space between the border and the content in a table, use the padding property on <td> and <th> elements:
+
+Add the border-bottom property to <th> and <td> for horizontal dividers:
+
+Example
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+
+For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:
+
+Example
+tr:nth-child(even) {background-color: #f2f2f2;}
+*/
+
+
+/*
+
+
+
+*/
+
+
+
+
+
+
+

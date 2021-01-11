@@ -1,0 +1,55 @@
+a.one:link {color: #ff0000;}
+a.one:visited {color: #0000ff;}
+a.one:hover {color: #ffcc00;}
+a.one:active{ color:green;}
+
+/*
+
+When setting the style for several link states, there are some order rules:
+
+a:hover MUST come after a:link and a:visited
+a:active MUST come after a:hover
+
+
+*/
+
+.two{
+	
+}
+a.two:link{
+	
+	text-decoration:none;
+	
+}
+a.two:visited{
+	text-decoration:none;
+}
+a.two:hover{
+	background-color:red;
+	text-decoration:underline;
+}
+a.two:active{
+	text-decoration:underline;
+}
+
+/*
+	we should not give spaces between  ":"   *** important **** 
+
+*/
+
+
+
+a.three:link,a.three:visited{
+	display:inline-block;
+	background-color:red;
+	padding:20px;
+	color:white;
+	text-decoration:none;
+	
+}
+a.three:hover,a.three:active{
+	background-color:black;
+	font-size:150%;
+	font-family:monospace;
+	
+}

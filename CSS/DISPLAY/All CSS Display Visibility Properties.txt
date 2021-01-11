@@ -1,0 +1,4 @@
+CSS Display/Visibility Properties
+Property	Description
+display	Specifies how an element should be displayed
+visibility	Specifies whether or not an element should be visible
