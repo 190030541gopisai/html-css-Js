@@ -1,0 +1,92 @@
+/*
+There are two ways to create a horizontal navigation bar. Using inline or floating list items.
+
+Inline List Items
+One way to build a horizontal navigation bar is to specify the <li> elements as inline, in addition to the "standard" code from the previous page:
+
+Example
+li {
+  display: inline;
+}
+
+*/
+
+.one > ul{
+	margin:0px;
+	padding:0px;
+}
+.one li{
+	display:inline;
+}
+
+
+/*
+Floating List Items
+Another way of creating a horizontal navigation bar is to float the <li> elements, and specify a layout for the navigation links:
+
+*/
+
+body{
+	height:2000px;
+}
+.two ul{
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	background-color: red;
+	overflow: hidden;
+	
+	
+}
+.two li{
+	float:left;
+}
+
+.two a{	
+	
+	display:block;
+	padding:8px;
+	/*background-color: #dddddd;*/
+	
+}
+
+/*
+Example explained:
+
+float: left; - use float to get block elements to slide next to each other
+display: block; - Allows us to specify padding (and height, width, margins, etc. if you want)
+padding: 8px; - Since block elements take up the full width available, they cannot float next to each other. Therefore, specify some padding to make them look good
+background-color: #dddddd; - Add a gray background-color to each a element
+Tip: Add the background-color to <ul> instead of each <a> element if you want a full-width background color:
+
+*/
+
+
+
+/*
+
+Sticky Navbar
+Add position: sticky; to <ul> to create a sticky navbar.
+
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+*/
+.three ul{
+	list-style-type: none;
+  	margin: 0;
+ 	padding: 0;
+  	overflow: hidden;
+  	background-color: #333;
+  	position: -webkit-sticky; /* Safari */
+  	position: sticky;
+  	top: 0;
+}
+.three li{
+	 float: left;
+}
+
+
+

@@ -1,0 +1,106 @@
+/*
+        A website is often divided into headers, menus, content and a footer:
+*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.header{
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+}
+
+.topnav ul{
+    list-style-type:none;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid;
+    overflow: hidden;
+    background-color: black;
+}
+.topnav li{
+    float: left;
+    border-right: 2px solid white;
+}
+.topnav a{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color: white;
+   
+}
+
+.topnav a:hover{
+    background-color: red;
+}
+
+
+/**   content **/
+.column{
+    float: left;
+    width: 33.33%;
+}
+.row::after{
+    content:"";
+    display: table;
+    clear:both
+}
+
+@media screen and (max-width:600px)
+{
+    .column{
+        width: 50%;
+    }
+}
+
+/*
+
+Tip: To create a 2-column layout, change the width to 50%. To create a 4-column layout, use 25%, etc.
+
+Tip: Do you wonder how the @media rule works? Read more about it in our CSS Media Queries chapter.
+
+Tip: A more modern way of creating column layouts, is to use CSS Flexbox. However, it is not supported in Internet Explorer 10 and earlier versions. If you require IE6-10 support, use floats (as shown above).
+
+To learn more about the Flexible Box Layout Module, read our CSS Flexbox chapter.
+
+*/
+
+/* 
+
+Unequal Columns
+The main content is the biggest and the most important part of your site.
+
+It is common with unequal column widths, so that most of the space is reserved for the main content. The side content (if any) is often used as an alternative navigation or to specify information relevant to the main content. Change the widths as you like, only remember that it should add up to 100% in total:
+
+*/
+
+#unequal_columns .column{
+    float: left;
+}
+.column.side
+{
+    width: 25%;
+}
+.column.middle{
+    width: 50%;
+}
+
+@media screen and (max-width:600px)
+{
+    .column.side,.column.middle{
+        float: none;
+        width: 100%;
+    }
+}
+
+
+/* Footer */
+/* Style the footer */
+.footer {
+    background-color: #b42929;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="refresh" content="5">
+		<link rel="stylesheet" href="combinators.css">
+		<style>
+			
+/*
+A combinator is something that explains the relationship between the selectors.
+
+A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+
+There are four different combinators in CSS:
+
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+*/
+		</style>
+	</head>
+	<body>	
+		<div id="one"> 
+			<p>Paragraph 1 in the div.</p>
+			<p>Paragraph 2 in the div.</p>
+			<section>
+  			   <p>Paragraph 3 in the div.</p>		 		
+			</section>	
+		<div>
+		<div id="two"> 
+			 <p>Paragraph 1 in the div.</p>
+  			 <p>Paragraph 2 in the div.</p>
+  			 <section><p>Paragraph 3 in the div.</p></section> <!-- not Child but Descendant -->
+  			 <p>Paragraph 4 in the div.</p>
+		<div>
+		<div id="three"> 
+			<h1>Heading</h1>
+			 <p>Paragraph 1 in the div.</p>
+  			 <p>Paragraph 2 in the div.</p>
+  			 <section><p>Paragraph 3 in the div.</p></section> <!-- not Child but Descendant -->
+  			  <h1>Heading</h1>
+			 <p>Paragraph 4 in the div.</p>
+		<div>
+		<div class="four"> 
+			<h1>Heading</h1>
+			 <p>Paragraph 1 in the div.</p>
+  			 <p>Paragraph 2 in the div.</p>
+  			 <section><p>Paragraph 3 in the div.</p></section> <!-- not Child but Descendant -->
+  			  <h1>Heading</h1>
+			 <p>Paragraph 4 in the div.</p>
+		<div>
+		<p>Paragraph 3.</p>
+		<code>Some code.</code>
+		<p>Paragraph 4.</p>
+	</body>
+</html>

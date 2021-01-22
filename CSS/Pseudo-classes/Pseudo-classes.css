@@ -1,0 +1,93 @@
+/*
+
+What are Pseudo-classes?
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+
+
+Syntax
+The syntax of pseudo-classes:
+
+selector:pseudo-class {
+  property: value;
+}
+
+*/
+
+/* unvisited link */
+a:link {
+  color: powderblue;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+/*
+
+Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+
+*/
+
+
+a.highlight:hover {
+  color: #ff0000;
+} 
+
+/*
+Hover on <div>
+An example of using the :hover pseudo-class on a <div> element:
+
+Example
+
+*/
+div.ex1:hover{
+	background-color:red;
+	color:white;
+	font-size:150%;
+}
+
+div.ex2  p{
+	display:none;
+	background-color:yellow;
+	padding:30px;
+}
+div.ex2:hover p{
+	display:block;
+}
+
+div.ex3 p:first-child{
+	background-color:red;
+}
+div.ex4  p i:first-child {
+  color: blue;
+} 
+
+div.ex5  p:first-child i {
+  color: blue;
+} 
+
+
+
+/*
+CSS - The :lang Pseudo-class
+
+https://www.w3schools.com/css/css_pseudo_classes.asp
+*/

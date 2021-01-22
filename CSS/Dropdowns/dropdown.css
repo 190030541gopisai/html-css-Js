@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 3px;
+}
+.dropbtn{
+    
+    background-color: green;
+    color: white;  
+    padding: 15px 10px;
+    width: 150px;
+    border: 1px solid black;
+    line-height: 25px;
+}
+.drop-content{
+    display: none;
+}
+.drop-content ul{
+    list-style-type: none;
+}
+
+.drop-content li{
+    border-bottom: 1px solid white;
+    margin: 5px;
+}
+.drop-content li:last-child{
+    border-bottom:none;
+}
+
+.dropbtn:hover .drop-content{
+    display: block;
+}
+.dropdown:hover{
+    background-color: blue;
+}

@@ -1,0 +1,53 @@
+
+
+
+#container{
+	padding:50px;
+	margin:10px 15%;
+	background-color:#f2f2f2;
+	border-radius:10px;
+}
+input[type="text"],select{
+	padding:12px;
+	width:100%;
+	margin:8px 0;
+	border-radius:5px;
+  	border: 1px solid gray;
+	box-sizing: border-box;
+	height:50px;
+	outline:none;/* to remove the default focussign color blue by the browser*/
+	
+	
+}
+input[type="submit"]{
+	  width:100%;
+	  background-color: #4CAF50;
+	  color:white;
+	  height:60px;
+	  border:1px solid gray;
+	  border-radius:5px;
+}
+
+/*
+The example above applies to all <input> elements. If you only want to style a specific input type, you can use attribute selectors:
+
+input[type=text] - will only select text fields
+input[type=password] - will only select password fields
+input[type=number] - will only select number fields
+etc..
+
+
+*/
+
+/*
+
+Note that we have set the box-sizing property to border-box. This makes sure that the padding and eventually borders are included in the total width and height of the elements.
+*/
+
+input[type=text]:focus{
+	background-color:black;
+	color:white;
+	
+}
+
+

@@ -1,0 +1,19 @@
+/*
+
+Styling Forms
+The attribute selectors can be useful for styling forms without class or ID:
+
+*/
+
+#eight input[type="text"]{
+	width:100px;
+	display:block;
+	margin-bottom:10px;
+	background-color:yellow;
+}
+#eight input[type="button"]{
+	width:120px;
+	margin-left:35px;
+	display:block;
+	background-color:red;
+}

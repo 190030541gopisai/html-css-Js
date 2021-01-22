@@ -1,0 +1,79 @@
+/*
+
+Navigation Bars
+Having easy-to-use navigation is important for any web site.
+
+With CSS you can transform boring HTML menus into good-looking navigation bars.
+
+Navigation Bar = List of Links
+A navigation bar needs standard HTML as a base.
+
+In our examples we will build the navigation bar from a standard HTML list.
+
+A navigation bar is basically a list of links, so using the <ul> and <li> elements makes perfect sense:
+
+*/
+
+.one ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+/*
+
+Example explained:
+
+list-style-type: none; - Removes the bullets. A navigation bar does not need list markers
+Set margin: 0; and padding: 0; to remove browser default settings
+The code in the example above is the standard code used in both vertical, and horizontal navigation bars, which you will learn more about in the next chapters.
+
+*/
+
+
+
+/*-----------------------------------------------------*/
+/*
+To build a vertical navigation bar, you can style the <a> elements inside the list, in addition to the code from the previous page:
+*/
+.two>ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:200px;
+}
+.two ul >li a{
+	display:block;
+	border:1px solid black;
+	background-color: #dddddd;
+	padding: 8px 16px;
+	/*width:60px;*/
+}
+
+
+.two li a:link{
+	  background-color:red;
+  	  color: white;
+}
+.two li a:visited{
+	  background-color:green;
+  	  color: white;
+}
+.two li a:hover{
+	  background-color: blue;
+  	  color: white;
+}
+.two li a:active{
+	  background-color: black;
+  	  color: white;
+}
+
+
+/*
+Example explained:
+
+display: block; - Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify the width (and padding, margin, height, etc. if you want)
+width: 60px; - Block elements take up the full width available by default. We want to specify a 60 pixels width
+You can also set the width of <ul>, and remove the width of <a>, as they will take up the full width available when displayed as block elements. This will produce the same result as our previous example:
+
+*/

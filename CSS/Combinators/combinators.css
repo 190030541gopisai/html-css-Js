@@ -1,0 +1,78 @@
+/*
+There are four different combinators in CSS:
+
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+
+*/
+
+/*
+Descendant Selector
+The descendant selector matches all elements that are descendants of a specified element.
+
+The following example selects all <p> elements inside <div> elements: 
+
+*/
+
+#one p{
+	background-color:yellow;
+} 
+/*
+
+Child Selector (>)
+The child selector selects all elements that are the children of a specified element.
+
+The following example selects all <p> elements that are children of a <div> element:
+
+Example
+div > p {
+  background-color: yellow;
+}
+
+*/
+#two>p{
+	background-color:green;
+}
+
+/*
+Adjacent Sibling Selector (+)
+The adjacent sibling selector is used to select an element that is directly after another specific element.
+
+Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+
+The following example selects the first <p> element that are placed immediately after <div> elements:
+
+*/
+
+#three>h1+p{
+	background-color:pink;
+}
+
+
+/*
+
+General Sibling Selector (~) ---opposite to + adjacent sibling
+The general sibling selector selects all elements that are siblings of a specified element.
+
+The following example selects all <p> elements that are siblings of <div> elements: 
+
+Example
+div ~ p {
+  background-color: yellow;
+}
+
+*/
+
+div.four>h1 ~ p {
+ 	
+	color:white;
+	background-color: red;
+}
+
+
+
+
+
+
