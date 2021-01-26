@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Specificity.css">
+    <style>
+        /*
+            internal css has high priority than external css
+            so be careful when declaring selectors
+        */
+        h1{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        something
+    </div>
+    <h1>THis is the heading</h1>
+    <h2>THis is the heading</h2>
+
+</body>
+</html>

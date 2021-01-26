@@ -1,0 +1,39 @@
+/*  
+
+        CSS gradients let you display smooth transitions between two or more specified colors.
+
+        CSS defines two types of gradients:
+
+        Linear Gradients (goes down/up/left/right/diagonally)
+        Radial Gradients (defined by their center)
+
+*/
+/*
+    CSS Linear Gradients
+    To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.
+
+    Syntax
+    background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+*/
+
+/*
+    Direction - Top to Bottom (this is default)
+
+The following example shows a linear gradient that starts at the top. It starts red, transitioning to yellow:
+*/
+/*
+see lot more detail in
+https://www.w3schools.com/css/css3_gradients.asp
+*/
+div
+{
+    height: 500px;
+    width: 100%;
+}
+#one{
+
+    background-image: linear-gradient(200deg,violet 10%,indigo 20%,blue 20%,green 1%,yellow,orange,red);
+}
+#two{
+    background-image: repeating-linear-gradient(to left,red 10%,green 20%);
+}

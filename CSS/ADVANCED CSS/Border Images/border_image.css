@@ -1,0 +1,18 @@
+.one{
+    
+    border: 50px solid;
+    width: 500px;
+    height: 500px;
+    border-image-source: url('./border1.png');
+    border-image-slice: 10;
+    border-image-repeat:repeat;
+
+}
+
+/*
+    shorthand
+border-image:url() source repeat;
+
+Tip: The border-image property is actually a shorthand property for the border-image-source, border-image-slice, border-image-width, border-image-outset and border-image-repeat properties.
+
+*/

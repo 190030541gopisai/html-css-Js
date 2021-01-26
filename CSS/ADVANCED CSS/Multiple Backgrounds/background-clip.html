@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  
+            CSS background-clip Property
+            The CSS background-clip property specifies the painting area of the background.
+
+            The property takes three different values:
+
+            border-box - (default) the background is painted to the outside edge of the border
+            padding-box - the background is painted to the outside edge of the padding
+            content-box - the background is painted within the content box
+            The following example illustrates the background-clip property:
+        */
+        #example1{
+            background-color: yellow;
+            border: 40px dashed black;
+            background-clip:content-box;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The background-clip Property</h1>
+
+    <p>No background-clip (border-box is default):</p>
+    <div id="example1">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+
+    <p>background-clip: padding-box:</p>
+    <div id="example2">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+
+    <p>background-clip: content-box:</p>
+    <div id="example3">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+</body>
+</html>
