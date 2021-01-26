@@ -1,0 +1,14 @@
+div{
+    height: 500px;
+    background-image: radial-gradient(circle at top,green,transparent),
+    radial-gradient(at left,red,transparent),
+    radial-gradient(at right,blue,transparent),
+    radial-gradient(circle at bottom,white 10%,transparent);
+}
+
+#grad1 {
+    height: 150px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}

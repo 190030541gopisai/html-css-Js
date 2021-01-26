@@ -1,0 +1,6 @@
+CSS Shadow Properties
+The following table lists the CSS shadow properties:
+
+Property	Description
+box-shadow	Adds one or more shadows to an element
+text-shadow	Adds one or more shadows to a text
