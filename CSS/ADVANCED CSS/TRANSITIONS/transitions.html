@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  
+            CSS Transitions
+            CSS transitions allows you to change property values smoothly, over a given duration.
+        */
+        /*
+            In this chapter you will learn about the following properties:
+
+            transition
+            transition-delay
+            transition-duration
+            transition-property
+            transition-timing-function
+        */
+        /*  
+            How to Use CSS Transitions?
+            To create a transition effect, you must specify two things:
+
+            the CSS property you want to add an effect to
+            the duration of the effect
+        */
+        /*  
+        
+            div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s;
+            }
+
+            The transition effect will start when the specified CSS property (width) changes value.
+
+            Now, let us specify a new value for the width property when a user mouses over the <div> element:
+
+            Example
+            div:hover {
+            width: 300px;
+            }
+        */
+        div{
+            width:100px;
+            height: 100px;
+            background-color:black;
+            color: white;
+            text-align:center;
+            
+        }
+        #one{
+            transition:width 2s;
+        }
+        #one:hover{
+            width:100%;
+        }
+        /*  
+            Notice that when the cursor mouses out of the element, it will gradually change back to its original style.
+        */
+        /* Change Several Property Values
+        The following example adds a transition effect for both the width and height property, */
+        #two{
+            transition:width 2s,height 4s;
+        }
+        #two:hover{
+            width: 100%;
+            height: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="one">
+        something
+    </div>
+    <hr>
+    <div id="two">
+        something
+    </div>
+ 
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+CSS Transition Properties
+The following table lists all the CSS transition properties:
+
+Property	Description
+transition	A shorthand property for setting the four transition properties into a single property
+transition-delay	Specifies a delay (in seconds) for the transition effect
+transition-duration	Specifies how many seconds or milliseconds a transition effect takes to complete
+transition-property	Specifies the name of the CSS property the transition effect is for
+transition-timing-function	
