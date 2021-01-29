@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  
+                CSS 3D Transforms Methods
+                With the CSS transform property you can use the following 3D transformation methods:
+
+                rotateX()
+                rotateY()
+                rotateZ()
+        */
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        #mydiv{
+            transform:rotateX(180deg);
+        }
+        .mydiv2:hover{
+            transform:rotateY(180deg);
+        }
+        .mydiv3{
+            transform:rotate(20deg);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+          This a normal div element.
+    </div>
+    <div id="mydiv">
+        The rotateX() method rotates an element around its X-axis at a given degree
+    </div>
+    <div class="mydiv2">
+        The rotateX() method rotates an element around its X-axis at a given degree
+    </div>
+    <div class="mydiv3">
+        The rotateX() method rotates an element around its X-axis at a given degree
+    </div>
+</body>
+</html>

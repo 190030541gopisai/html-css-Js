@@ -1,5 +1,5 @@
 CSS Text Effect Properties
-The following table lists the CSS text effect properties
+The following table lists the CSS text effect properties:
 
 Property	Description
 text-align-last	Specifies how to align the last line of a text

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            In this chapter you will learn about the following CSS property:
+            transform
+        */
+        /*
+            CSS 2D Transforms Methods
+            With the CSS transform property you can use the following 2D transformation methods:
+
+            translate()
+            rotate()
+            scaleX()
+            scaleY()
+            scale()
+            skewX()
+            skewY()
+            skew()
+            matrix()
+        */
+        div{
+            background-color: yellow;
+            font-size:1.875em;
+            width: 200px;
+            height: 200px;
+            padding-top:70px;
+            text-align:center;
+            box-sizing:border-box;
+        }
+        .translate{
+
+            transform:translate(10px,50px);
+                            /*  x-axis,y-axis----postive-down
+                                            -----negative-up
+                            */
+        }
+        .rotate:hover{
+
+            transform: rotate(-40deg);
+            /*
+                positive rotates right
+                negative rotates left
+            */
+
+        }
+        .scale:hover{
+            transform:scale(2,1);
+        }
+
+        /*
+            The scaleX() Method
+            The scaleX() method increases or decreases the width of an element.
+        */
+        .scaleX:hover{
+            transform: scaleX(4);
+        }
+        .scaleY:hover{
+            transform: scaleY(4);
+        }
+        /*
+            The skewX() Method
+            The skewX() method skews an element along the X-axis by the given angle.
+        */
+        .skew{
+            background-color: black;
+            color: white;
+                transform:skew(20deg,10deg);
+                            /* x-axis --- sides,y-axis---up            */
+        }
+        .skewX
+        {
+            background-color: rgb(179, 26, 26);
+            color: white;
+            transform: skewX(50deg);   
+        }
+        .skewY{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            transform: skewY(50deg); 
+        }
+        /*  
+            The matrix() Method
+            The matrix() method combines all the 2D transform methods into one.
+
+            The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements.
+
+            The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+
+            Example
+            div {
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+            }
+        */
+
+    </style>
+</head>
+<body>
+        <div class="translate">
+                    2d translate
+        </div>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <div class="rotate">
+            2d rotate
+        </div>
+        <hr>
+        <div class="scale">
+            2d scale
+        </div>
+        <hr>
+        <div class="scaleX">
+            2d scaleX
+        </div>
+        <hr>
+        <div class="scaleY">
+            2d scaleY
+        </div>
+        <hr>
+        <div class="skew">
+            2d skew
+        </div>
+        <div class="skewX">
+            2d skewX
+        </div>
+        <div class="skewY">
+            2d skewY
+        </div>
+</body>
+</html>

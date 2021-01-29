@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test1{
+            white-space: nowrap;
+            border: 1px solid ;
+            width: 200px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+        }
+        .test2{
+            white-space: nowrap; 
+            width: 200px; 
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+        .test1:hover{
+            overflow: visible;
+        }
+        /* CSS Word Wrapping */
+        .test3{
+            border: 1px solid;
+            width: 200px;
+            word-wrap: break-word;
+        }
+
+        /* CSS Writing Mode 
+            The CSS word-break property specifies line breaking rules.
+            Example
+            p.test1 {
+            word-break: keep-all;
+            }
+
+            p.test2 {
+            word-break: break-all;
+            }
+        */
+        .test4{
+            border: 1px solid;
+            width: 200px;
+            word-wrap:keep-all;
+        }
+        /*  
+        
+            CSS Writing Mode
+            The CSS writing-mode property specifies whether lines of text are laid out horizontally or vertically.
+
+            Some text with a span element with a vertical-rl writing-mode.
+        */
+        .test5{
+            writing-mode:horizontal-tb;
+        }
+        span.test6{
+            writing-mode:vertical-rl;
+        }
+        
+        .test7{
+            writing-mode:vertical-rl;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="test1">
+        This is some long text that will not fit in the box
+    </p>
+    <p class="test2">
+        This is some long text that will not fit in the box
+    </p>
+    <!--  -->
+    <p class="test3">
+        This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.
+    </p>
+    <p class="test4">
+        This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.
+    </p>
+    <!--  -->
+    <p class="test5">
+        This is some text <span class="test6">vertical-rl</span> word
+    </p>
+    <p class="test7">
+        This is some long text that will not fit in the box
+    </p>
+
+
+</body>
+</html>
